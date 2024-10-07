@@ -29,14 +29,7 @@ function GetValues()
 
 function Show()
 {
-    document.getElementById("num1").style.display="block";
-    document.getElementById("num2").style.display="block";
-    document.getElementById("limit").style.display="block";
-    document.getElementById("sum").style.display="block";
-    document.getElementById("label1").style.display="block";
-    document.getElementById("label2").style.display="block";
-    document.getElementById("label3").style.display="block";
-   
+    
    
     l=[10,12,14,156,28];
     m=3;
