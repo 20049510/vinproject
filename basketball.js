@@ -1,4 +1,4 @@
-let rice = {
+let basket = {
     wheat : 5,
     ragi : 7,
     paper : 20
@@ -10,18 +10,18 @@ let price = {
     paper : 1
 };
 
-function TotalPrice(rice,price)
+function TotalPrice(basket,price)
 {
     sum = 0;
-    for(let product in rice)
+    for(let product in basket)
     {
-        if(rice.hasOwnProperty(product)&&price.hasOwnProperty(product))
+        if(basket.hasOwnProperty(product)&&price.hasOwnProperty(product))
         {
-            sum+=rice[product]*price[product];
+            sum+=basket[product]*price[product];
         }
     }
     
     alert("Basket Sum = "+sum);
     return sum;
 }
-alert(TotalPrice({'wheat':3,'ragi':2},{'wheat':2.3,'ragi':.90}))
+alert(TotalPrice({'wheat':3,'ragi':2},{'wheat':2.3,'ragi':.90,'paper':99}))
