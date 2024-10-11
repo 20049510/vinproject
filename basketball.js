@@ -1,10 +1,10 @@
-const rice = {
+let rice = {
     wheat : 5,
     ragi : 7,
     paper : 20
 };
 
-const price = {
+let price = {
     wheat : 10,
     ragi : 20,
     paper : 1
@@ -13,7 +13,7 @@ const price = {
 function TotalPrice(rice,price)
 {
     sum = 0;
-    for(const product in rice)
+    for(let product in rice)
     {
         if(rice.hasOwnProperty(product)&&price.hasOwnProperty(product))
         {
@@ -24,7 +24,4 @@ function TotalPrice(rice,price)
     alert("Basket Sum = "+sum);
     return sum;
 }
-function sum()
-{
-    TotalPrice(rice,price);
-}
+alert(TotalPrice({'wheat':3,'ragi':2},{'wheat':2.3,'ragi':.90}))
