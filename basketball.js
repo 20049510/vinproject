@@ -26,5 +26,5 @@ function TotalPrice(rice,price)
 }
 function sum()
 {
-    TotalPrice(rice,price)
+    TotalPrice(rice,price);
 }
