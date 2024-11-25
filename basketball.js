@@ -1,4 +1,4 @@
-let basket = 
+let basket = {
     wheat : 5,
     ragi : 7,
     paper : 20
